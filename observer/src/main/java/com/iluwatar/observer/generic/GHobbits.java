@@ -49,6 +49,9 @@ public class GHobbits implements Race {
       case WINDY:
         LOGGER.info("The hobbits hold their hats tightly in the windy weather.");
         break;
+      case SNOWY:
+        LOGGER.info("The hobbits try not to leave home in the snow.");
+        break;
       default:
         break;
     }

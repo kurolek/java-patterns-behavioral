@@ -23,6 +23,7 @@
 
 package com.iluwatar.observer;
 
+import com.iluwatar.observer.generic.GDwarfs;
 import com.iluwatar.observer.generic.GHobbits;
 import com.iluwatar.observer.generic.GOrcs;
 import com.iluwatar.observer.generic.GWeather;
@@ -54,6 +55,7 @@ public class App {
     Weather weather = new Weather();
     weather.addObserver(new Orcs());
     weather.addObserver(new Hobbits());
+    weather.addObserver(new Dwarfs());
     // add an instance of additional race as another observer
 
     weather.timePasses();
@@ -66,6 +68,7 @@ public class App {
     GWeather genericWeather = new GWeather();
     genericWeather.addObserver(new GOrcs());
     genericWeather.addObserver(new GHobbits());
+    genericWeather.addObserver(new GDwarfs());
 
     genericWeather.timePasses();
     genericWeather.timePasses();
